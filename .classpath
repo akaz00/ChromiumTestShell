@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="lib" path="libs/chromium_apk_content_shell.jar"/>
+	<classpathentry kind="lib" path="libs/chromium_base.jar"/>
+	<classpathentry kind="lib" path="libs/chromium_chrome.jar"/>
+	<classpathentry kind="lib" path="libs/chromium_content.jar"/>
+	<classpathentry kind="lib" path="libs/chromium_eyesfree.jar"/>
+	<classpathentry kind="lib" path="libs/chromium_guava_javalib.jar"/>
+	<classpathentry kind="lib" path="libs/chromium_jsr_305_javalib.jar"/>
+	<classpathentry kind="lib" path="libs/chromium_media.jar"/>
+	<classpathentry kind="lib" path="libs/chromium_navigation_interception.jar"/>
+	<classpathentry kind="lib" path="libs/chromium_net.jar"/>
+	<classpathentry kind="lib" path="libs/chromium_ui.jar"/>
+	<classpathentry kind="lib" path="libs/chromium_web_contents_delegate_android.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

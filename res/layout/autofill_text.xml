@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/autofill_name" android:background="#ffffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="18.0sp" android:textColor="#ffcccccc" android:ellipsize="end" android:id="@id/autofill_label" android:background="#ffffffff" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

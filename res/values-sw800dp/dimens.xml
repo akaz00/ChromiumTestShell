@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="favicon_size">24.0dip</dimen>
+    <dimen name="favicon_colorstrip_width">48.0dip</dimen>
+    <dimen name="favicon_colorstrip_height">3.0dip</dimen>
+    <dimen name="favicon_colorstrip_padding">9.0dip</dimen>
+    <dimen name="favicon_colorstrip_corner_radii">2.0dip</dimen>
+    <dimen name="favicon_fold_size">12.0dip</dimen>
+    <dimen name="favicon_fold_corner_radii">2.0dip</dimen>
+    <dimen name="favicon_fold_shadow">3.0dip</dimen>
+</resources>

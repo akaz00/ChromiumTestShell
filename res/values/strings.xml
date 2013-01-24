@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="low_memory_error">Unable to complete previous operation due to low memory</string>
+    <string name="opening_file_error">Failed to open selected file</string>
+    <string name="actionbar_share">Share</string>
+    <string name="actionbar_web_search">Web search</string>
+    <string name="accessibility_content_view">Web View</string>
+    <string name="date_picker_dialog_set">Set</string>
+    <string name="date_picker_dialog_clear">Clear</string>
+    <string name="date_time_picker_dialog_title">Set date and time</string>
+    <string name="month_picker_dialog_title">Set month</string>
+    <string name="accessibility_datetime_picker_date">Date</string>
+    <string name="accessibility_datetime_picker_time">Time</string>
+    <string name="accessibility_date_picker_month">Month</string>
+    <string name="accessibility_date_picker_year">Year</string>
+    <string name="media_player_error_title">Cannot play video</string>
+    <string name="media_player_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to this device.</string>
+    <string name="media_player_error_text_unknown">Sorry, this video cannot be played.</string>
+    <string name="media_player_error_button">OK</string>
+    <string name="media_player_loading_video">Loading video</string>
+    <string name="leave_this_page">Leave this Page</string>
+    <string name="stay_on_this_page">Stay on this Page</string>
+    <string name="reload_this_page">Reload this Page</string>
+    <string name="dont_reload_this_page">"Don't reload"</string>
+    <string name="js_modal_dialog_confirm">OK</string>
+    <string name="js_modal_dialog_cancel">Cancel</string>
+    <string name="suppress_js_modal_dialogs">Prevent this page from creating additional dialogs</string>
+    <string name="accessibility_js_modal_dialog_prompt">Prompt</string>
+    <string name="url_hint">Type URL Here</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="link_preview_overlay_radius">7.0dip</dimen>
+    <dimen name="favicon_size">16.0dip</dimen>
+    <dimen name="favicon_colorstrip_width">32.0dip</dimen>
+    <dimen name="favicon_colorstrip_height">2.0dip</dimen>
+    <dimen name="favicon_colorstrip_padding">6.0dip</dimen>
+    <dimen name="favicon_colorstrip_corner_radii">1.0dip</dimen>
+    <dimen name="favicon_fold_size">8.0dip</dimen>
+    <dimen name="favicon_fold_corner_radii">1.0dip</dimen>
+    <dimen name="favicon_fold_border">1.0px</dimen>
+    <dimen name="favicon_fold_shadow">2.0dip</dimen>
+</resources>
