@@ -15,9 +15,13 @@ import org.chromium.base.ChromiumActivity;
 import org.chromium.chrome.browser.DevToolsServer;
 import org.chromium.chrome.browser.TabBase;
 import org.chromium.content.app.LibraryLoader;
+import org.chromium.content.browser.ActivityContentVideoViewDelegate;
+import org.chromium.content.browser.AndroidBrowserProcess;
+import org.chromium.content.browser.ContentVideoView;
 import org.chromium.content.browser.ContentView;
 import org.chromium.content.browser.DeviceUtils;
 import org.chromium.content.common.CommandLine;
+import org.chromium.content.common.ProcessInitException;
 import org.chromium.ui.gfx.ActivityNativeWindow;
 
 /**
@@ -40,9 +44,12 @@ public class ChromiumTestShellActivity extends ChromiumActivity {
         waitForDebuggerIfNeeded();
 
         DeviceUtils.addDeviceSpecificUserAgentSwitch(this);
-
-        ContentView.initChromiumBrowserProcess(this, ContentView.MAX_RENDERERS_AUTOMATIC);
-
+        try {
+            AndroidBrowserProcess.init(this, AndroidBrowserProcess.MAX_RENDERERS_AUTOMATIC);
+        } catch (ProcessInitException e) {
+            Log.e(TAG, "Chromium browser process initialization failed", e);
+            finish();
+        }
         setContentView(R.layout.testshell_activity);
         mTabManager = (TabManager) findViewById(R.id.tab_manager);
         String startupUrl = getUrlFromIntent(getIntent());
@@ -53,6 +60,9 @@ public class ChromiumTestShellActivity extends ChromiumActivity {
         mWindow = new ActivityNativeWindow(this);
         mWindow.restoreInstanceState(savedInstanceState);
         mTabManager.setWindow(mWindow);
+
+        ContentVideoView.registerContentVideoViewContextDelegate(
+                new ActivityContentVideoViewDelegate(this));
 
         mDevToolsServer = new DevToolsServer(true, "chromium_testshell_devtools_remote");
         mDevToolsServer.setRemoteDebuggingEnabled(true);
@@ -128,6 +138,14 @@ public class ChromiumTestShellActivity extends ChromiumActivity {
     public ContentView getActiveContentView() {
         TabBase tab = getActiveTab();
         return tab != null ? tab.getContentView() : null;
+    }
+
+    /**
+     * Creates a {@link TabBase} with a URL specified by {@code url}.
+     * @param url The URL the new {@link TabBase} should start with.
+     */
+    public void createTab(String url) {
+        mTabManager.createTab(url);
     }
 
     private void waitForDebuggerIfNeeded() {
