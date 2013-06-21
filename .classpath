@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry exported="true" kind="lib" path="libs/base_java.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/cacheinvalidation_javalib.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/cacheinvalidation_proto_java.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/chrome_java.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/content_java.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/content_shell_java.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/eyesfree_java.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/guava_javalib.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/jsr_305_javalib.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/media_java.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/navigation_interception_java.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/net_java.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/protobuf_lite_javalib.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/sync_java.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/ui_java.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/web_contents_delegate_android_java.jar"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
-	<classpathentry kind="lib" path="libs/chromium_apk_content_shell.jar"/>
-	<classpathentry kind="lib" path="libs/chromium_base.jar"/>
-	<classpathentry kind="lib" path="libs/chromium_chrome.jar"/>
-	<classpathentry kind="lib" path="libs/chromium_content.jar"/>
-	<classpathentry kind="lib" path="libs/chromium_eyesfree.jar"/>
-	<classpathentry kind="lib" path="libs/chromium_guava_javalib.jar"/>
-	<classpathentry kind="lib" path="libs/chromium_jsr_305_javalib.jar"/>
-	<classpathentry kind="lib" path="libs/chromium_media.jar"/>
-	<classpathentry kind="lib" path="libs/chromium_navigation_interception.jar"/>
-	<classpathentry kind="lib" path="libs/chromium_net.jar"/>
-	<classpathentry kind="lib" path="libs/chromium_ui.jar"/>
-	<classpathentry kind="lib" path="libs/chromium_web_contents_delegate_android.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
